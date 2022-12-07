@@ -2,18 +2,18 @@
 import React from "react";
 import { NavigationContainer} from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "./navigation/home";
-import Number from "./navigation/number";
-import Otp from "./navigation/otp";
+import PersonalDetails from "./navigation/persondetails";
+import IDProof from "./navigation/idproof";
+import BankDetails from "./navigation/bankdetails";
 const Stack= createStackNavigator();
  
 function App(){
         return(
             <NavigationContainer>
                 <Stack.Navigator screenOptions={{header : ()=> null}} >
-                    <Stack.Screen name="home" component={Home}/>
-                    <Stack.Screen name="number" component={Number} />
-                    <Stack.Screen name="otp" component={Otp} />
+                    <Stack.Screen name="personalDetails" component={PersonalDetails}/>
+                    <Stack.Screen name="idProof" component={IDProof} />
+                    <Stack.Screen name="bankDetails" component={BankDetails} />
                 </Stack.Navigator>
             </NavigationContainer>
         
